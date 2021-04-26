@@ -467,3 +467,13 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
+.dignity-svg {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
