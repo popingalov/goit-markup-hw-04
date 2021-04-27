@@ -156,7 +156,7 @@ footer .logo-studio {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('./images/hero-fon.jpg');
+    url('../images/hero-fon.jpg');
 
   background-repeat: no-repeat;
   background-position: center;
