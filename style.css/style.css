@@ -211,6 +211,7 @@ footer .logo-studio {
   color: var(--h-and-li-cl);
 }
 .works-p {
+  color: black;
   margin-bottom: 0px;
   font-family: var(--hero-font);
   font-size: 16px;
@@ -367,6 +368,8 @@ img {
 }
 
 .team-foto {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #fff;
   max-width: 270px;
@@ -375,6 +378,15 @@ img {
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 30px * var(--team-foto)) / var(--team-foto));
 }
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link {
+  display: block;
+}
+
 .team-foto:not(:first-child) {
   margin-left: 30px;
 }
