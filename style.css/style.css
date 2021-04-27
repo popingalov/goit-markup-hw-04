@@ -23,7 +23,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--body-cl);
-  background-color: #e5e5e5;
 }
 
 header {
@@ -140,16 +139,29 @@ footer .logo-studio {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--h-and-li-cl);
-  background: #f5f4fa;
+  background-color: rgba(255, 255, 255, 0.678);
   border-radius: 4px;
 }
+
 .hero-section {
   display: flex;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-color: var(--background);
 }
+.hero-bg {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('/images/hero-fon.jpg');
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .dignity-li {
   font-family: var(--hero-font);
   font-weight: 700;
@@ -186,7 +198,7 @@ footer .logo-studio {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .works {
@@ -349,13 +361,14 @@ img {
   margin-right: -30px;
 }
 .section-thre {
-  background: var(--bg-team);
+  background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team-foto {
-  background: #ffffff;
+  text-align: center;
+  background-color: #fff;
   max-width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -370,7 +383,6 @@ img {
   background-color: var(--bg);
 }
 .footer .section {
-  flex-direction: column;
   display: flex;
 }
 .footer {
@@ -381,7 +393,7 @@ img {
 .footer .logo {
   padding-bottom: 20px;
 }
-.footer a {
+.footer-addres a {
   display: flex;
   padding-bottom: 9px;
 }
@@ -421,7 +433,6 @@ img {
   border: 1px solid #eeeeee;
 }
 .my-clients {
-  background-color: var(--bg);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -438,6 +449,7 @@ img {
 .clients {
   display: inline-flex;
   margin-right: -30px;
+  flex-wrap: wrap;
 }
 .clients-item {
   width: 170px;
@@ -467,6 +479,12 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
+.my-clients-h2 {
+  font-weight: 700;
+  size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
 .dignity-svg {
   display: flex;
   width: 270px;
@@ -476,4 +494,81 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.soc-list {
+  justify-content: center;
+  display: inline-flex;
+}
+.soc-icon-item {
+  width: 44px;
+}
+.soc-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--hero-cl);
+  color: var(--a-focus-cl);
+}
+.soc-icon-link:focus .soc-icon,
+.soc-icon-link:hover .soc-icon {
+  fill: currentColor;
+}
+.soc-icon {
+  fill: #afb1b8;
+}
+.soc-icon-link:focus,
+.soc-icon-link:hover {
+  background-color: var(--a-focus-cl);
+  color: var(--hero-cl);
+}
+.footer-p {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--hero-cl);
+}
+
+.footer-addres {
+  margin-right: 70px;
+}
+
+.footer-soc-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--a-focus-cl);
+}
+.footer-soc-icon-link:focus .footer-soc-icon,
+.footer-soc-icon-link:hover .footer-soc-icon {
+  fill: currentColor;
+}
+.footer-soc-icon {
+  fill: var(--hero-cl);
+}
+.footer-soc-icon-link:focus,
+.footer-soc-icon-link:hover {
+  background-color: var(--a-focus-cl);
+  color: var(--hero-cl);
+}
+.footer-soc-icon-item {
+  width: 44px;
+}
+
+.footer-soc-icon-item:not(:last-child) {
+  margin-right: 10px;
 }
