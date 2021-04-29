@@ -139,8 +139,9 @@ footer .logo-studio {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--h-and-li-cl);
-  background-color: rgba(255, 255, 255, 0.678);
+  color: var(--hero-cl);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
